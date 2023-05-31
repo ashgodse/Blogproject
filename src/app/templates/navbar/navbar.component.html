@@ -1,0 +1,164 @@
+<div class="navbar-content bg-dark">
+    <div class="container">
+        <div class="navcontent navbar navbar-dark bg-dark d-flex justify-content-between">
+            <div class="icons">
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f m-2 text-white"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-twitter m-2 text-white"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-github-alt m-2 text-white"></i>
+                </a>
+            </div>
+            <div class="info d-flex">
+                <div class="contact me-5">
+                    <a href="tel:+23-345-67890" class="text-decoration-none text-white">Call Us : <span
+                            class="text-decoration-none text-white">+23-345-67890</span>
+                    </a>
+                </div>
+                <div class="email">
+                    <i class="fa-regular fa-envelope text-warning me-2"></i>
+                    <span class="text-decoration-none text-white ">support@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="navbar-second border border-opacity-25 border-secondary p-3 bg-dark">
+    <div class="container">
+        <nav class="navbar navbar-expand navbar-dark bg-dark ">
+            <div class="container-fluid ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <b class="text-white Active">Mega</b> <span class="text-danger"><b>kit.</b></span>
+                </a>
+                <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarScroll">
+                    <div class="navlist d-flex">
+                        <ul class="navbar-nav">
+                            <li class="nav-item ">
+                                <a class="nav-link active ms-3 text-white Active" aria-current="page" routerLink="home">HOME</a>
+                            </li>
+                            <li class="nav-item ms-3">
+                                <a class="nav-link text-white Active" href="#">ABOUT</a>
+                            </li>
+
+                    
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white Active" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    BLOG
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">All blog</a></li>
+                                    <li><a class="dropdown-item" href="#">Blog by user</a></li>
+                                  
+                                </ul>
+                            </li>
+                            <li class="nav-item ms-3">
+                                <a class="nav-link text-white Active" href="#">CONTACT</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex ms-4" role="search">
+                           <button class="btn border-danger rounded-pill text-white" data-bs-toggle="modal"
+                           data-bs-target="#exampleModal">Register</button>
+                        </form>
+
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Blog User Registeration</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label for="" class="">Email ID</label>
+                                                    <input type="email" name="emailId" id="" class="form-control"
+                                                        [(ngModel)]="userObj.emailId">
+                                                </div>
+                                                <div class="col-6">
+                                                    <label for="">Password</label>
+                                                    <input type="password" name="password" id="" class="form-control"
+                                                        [(ngModel)]="userObj.password">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label for="">Name</label>
+                                                    <input type="text" name="name" id="" class="form-control"
+                                                        [(ngModel)]="userObj.name">
+                                                </div>
+                                                <div class="col-6">
+                                                    <label for="">Position</label>
+                                                    <input type="text" name="position" id="" class="form-control"
+                                                        [(ngModel)]="userObj.position">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label for="">Profile Summary</label>
+                                                    <input type="text" name="profileSummary" id="" class="form-control"
+                                                        [(ngModel)]="userObj.profileSummary">
+                                                </div>
+                                                <div class="col-6">
+                                                    <label for="">Facebook Url</label>
+                                                    <input type="text" name="facebookUrl" id="" class="form-control"
+                                                        [(ngModel)]="userObj.facebookUrl">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label for="">Linkedin Url</label>
+                                                    <input type="text" name="linkdinUrl" id="" class="form-control"
+                                                        [(ngModel)]="userObj.linkdinUrl">
+                                                </div>
+                                                <div class="col-6">
+                                                    <label for="">Portifilo Url</label>
+                                                    <input type="text" name="profilePhotoUrl" id="" class="form-control"
+                                                        [(ngModel)]="userObj.profilePhotoUrl">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label for="">City</label>
+                                                    <input type="text" name="city" id="" class="form-control"
+                                                        [(ngModel)]="userObj.city">
+                                                </div>
+                                                <div class="col-6">
+                                                    <label for="">Date</label>
+                                                    <input type="date" name="createdDate" id="" class="form-control"
+                                                        [(ngModel)]="userObj.createdDate">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                                            (click)="createdUser()">Register User</button>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                            (click)="closeBtn()">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div>
+    <router-outlet></router-outlet>
+</div>

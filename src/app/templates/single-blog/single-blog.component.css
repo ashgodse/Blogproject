@@ -1,0 +1,37 @@
+.textblog a {
+    text-decoration: none;
+    color: black;
+}
+
+.textblog a :hover {
+    color: orange;
+}
+
+.tags a {
+    color: black;
+}
+
+.tags a:hover {
+    color: red;
+}
+
+.blog-icons a {
+    color: black;
+}
+
+.blog-icons a :hover {
+    color: red;
+}
+
+.user-info {
+    width: 30%;
+}
+
+.social-links a {
+    color: black;
+}
+
+.social-links a:hover {
+    color: blue;
+}
+

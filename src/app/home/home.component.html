@@ -1,0 +1,36 @@
+<!-- <p>allblog works!</p> -->
+<app-navbar></app-navbar>
+<!-- <app-blogtitle [blogtitle]="'Our Blogs'" [blogname]="'Blog Articles'"></app-blogtitle> -->
+
+<div class="container-fluid bg-light">
+    <div class="container ">
+        <div class="row mt-5">
+            <div class="col-4 mt-3 " *ngFor="let blog of blogsArray">
+                <div class="card card-content">
+                    <!-- <img src="https://themewagon.github.io/megakit-2/images/blog/1.jpg" class="card-img-top" alt="..."> -->
+                    <img [src]="blog.bannerImage" class="card-img-top" alt="...">
+
+                    <div class="card-body p-4 text">
+                        <p class="card-title border border-opacity-10 p-2 bg-light">
+                            <i class="fa-sharp fa-regular fa-pen-to-square text-secondary mx-2 "></i><span>
+                                {{blog.blogTags}}</span>
+                            <i class="fa-solid fa-message text-center text-secondary mx-2 "></i><span class="">5
+                                Comments</span>
+                            <i class="fa-regular fa-clock text-center mx-2 "></i><span class="">{{blog.createdDate |
+                                date:'dd-MMM'}}</span>
+                        </p>
+
+                        <h5 class="card-text mt-3 Active">{{blog.blogTitle}}</h5>
+
+                        <p class="card-text mt-3 text-secondary">{{blog.blogDescription}}</p>
+                        <button class="btn btn-danger rounded-pill" (click)="getBlogId(blog.blogId)">LEARN MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<app-footer></app-footer>
